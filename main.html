@@ -1,16 +1,64 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Insurance Registration Form</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="form-container">
+    <h2>Car Insurance Registration Form</h2>
 
+    <form id="carForm" method="post">
+      
+      <!-- Name -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Gender -->
+      <label>Gender:</label>
+      <div class="radio-group">
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+      </div>
+
+      <!-- Car Brands -->
+      <label for="cars">Car Brand:</label>
+      <select id="cars" name="cars">
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="mercedez">Mercedez</option>
+      </select>
+
+      <!-- Car Age -->
+      <label for="carage">Car Age:</label>
+      <input type="number" id="carage" name="carage" required>
+
+      <!-- Date of Purchase -->
+      <label for="dop">Date of Purchase:</label>
+      <input type="date" id="dop" name="dop" required>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
 </body>
-
 </html>
